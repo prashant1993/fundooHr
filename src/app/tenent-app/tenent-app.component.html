@@ -1,6 +1,7 @@
 
- <div class="demo-card-container" flex fxLayout.xs="column" fxLayoutGap.xs="0px" fxLayoutGap="10px" fxLayoutAlign="center center">
+  <div cass="demo-card-container" flex fxLayout.xs="column" fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center center">
   <mat-card >
+    <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
 
 <div class="" fxFlex="370px">
   <mat-grid-list cols="1"  rowHeight="40px">
@@ -13,39 +14,39 @@
   <mat-grid-tile  class="title">Company Name </mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput  required>
+    <input matInput type="text"  name="companyname" id="companyname" ngModel>
   </mat-form-field></mat-grid-tile>
 
   <mat-grid-tile class="title">Contact Name</mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput required>
+    <input matInput type="text"  name="contactname" id="contactname" ngModel>
   </mat-form-field></mat-grid-tile>
 
 
   <mat-grid-tile>Designation </mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput required>
+    <input matInput type="text"  name="designation" id="designation" ngModel>
   </mat-form-field>
   </mat-grid-tile>
 
   <mat-grid-tile>Phone number</mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput required>
+    <input matInput type="text"  name="number" id="number" ngModel>
   </mat-form-field></mat-grid-tile>
 
   <mat-grid-tile>Address</mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput required>
+    <input matInput type="text"  name="Address" id="Address" ngModel>
   </mat-form-field></mat-grid-tile>
 
   <mat-grid-tile>Corporate Email</mat-grid-tile>
   <mat-grid-tile>
     <mat-form-field >
-    <input matInput required>
+    <input matInput type="text"  name="email" id="email" ngModel>
   </mat-form-field></mat-grid-tile>
 
 <mat-grid-tile></mat-grid-tile>
@@ -55,13 +56,12 @@
   <mat-grid-list cols="4" rowHeight="40px">
     <mat-grid-tile></mat-grid-tile>
   <mat-grid-tile fxLayoutAlign="center center">
-    <button  mat-raised-button color="primary" class="save_button">SAVE</button></mat-grid-tile>
+    <button  mat-raised-button type="submit" color="primary" class="save_button" >SAVE</button></mat-grid-tile>
   <mat-grid-tile>
   <button  mat-raised-button color="primary">CANCLE</button>
 </mat-grid-tile>
-
 </mat-grid-list>
 </div>
-
+</form>
 </mat-card>
 </div>

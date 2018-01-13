@@ -1,67 +1,42 @@
 <!-- login form  -->
-<!-- <mat-grid-list cols="3" rowHeight="2:1">
-  <mat-grid-tile></mat-grid-tile>
-
-  <mat-grid-tile class="grid1">
-    <mat-toolbar color="primary">
+<!-- toolbar -->
+<mat-grid-list cols="1"  rowHeight="140px" >
+  <mat-grid-tile class="grid1" ></mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="3"  rowHeight="65px" >
+  <mat-grid-tile class="grid1" ></mat-grid-tile>
+  <mat-grid-tile class="grid2" >
+    <mat-toolbar color="primary" >
         <span>Super Administrator Login</span>
     </mat-toolbar>
   </mat-grid-tile>
-  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile class="grid3" > </mat-grid-tile>
+</mat-grid-list>
 
-  <mat-grid-tile></mat-grid-tile>
+<!--table  -->
+<div class="demo-card-container" flex  fxLayout.xs="column"  fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center">
+  <mat-card class="" fxFlex="33.33%" fxFlex.xs="50%">
 
-  <mat-grid-tile class="grid2">
-      <mat-card class="example-card" >
-        <mat-card-content>
-          <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)" >
-            <span>Email Address</span>
-            <mat-form-field >
-              <input matInput name="email" id="email" ngModel  required >
-            </mat-form-field>
-          <br>
-          <span>Password</span>
-            <mat-form-field >
-              <input matInput name="password" id="password" ngModel required>
-            </mat-form-field>
-          </form>
-
-              <mat-card-actions>
-                  <button mat-raised-button type="submit">LOGIN</button>
-              </mat-card-actions>
-            </mat-card-content>
-      </mat-card></mat-grid-tile>
-</mat-grid-list> -->
-
-<div class="demo-card-container" flex fxLayout.xs="column" fxLayoutGap.xs="0px" fxLayoutGap="10px" fxLayoutAlign="center center">
-
-  <div class="" fxFlex="370px">
-
-  <mat-card class="example-card" >
-  <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
-
-    <mat-grid-list cols="2" rowHeight="40px">
-
-    <mat-grid-tile  class="title"> <label for="email">Email</label> </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-form-field >
-      <input matInput type="text" name="email" id="email" ngModel>
-    </mat-form-field >
-  </mat-grid-tile>
-
-
-      <mat-grid-tile  class="title"> <label for="email">Password</label> </mat-grid-tile>
-      <mat-grid-tile>
+    <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
+        <label for="email">Email</label>
         <mat-form-field >
-        <input matInput type="text" name="Password" id="Password" ngModel>
+          <input matInput type="text"  name="email" id="email" ngModel>
+        </mat-form-field >
+
+      <label for="email">Password</label>
+
+      <mat-form-field >
+        <input matInput type="text" name="password" id="password" ngModel>
       </mat-form-field >
+      <mat-grid-list cols="3" rowHeight="40px">
+        <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile fxLayoutAlign="center center">
+        <button  mat-raised-button color="primary" class="save_button">LOGIN</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
     </mat-grid-tile>
+    </mat-grid-list>
 
-
-  </mat-grid-list>
-
-    <button mat-raised-button type="submit">LOGIN</button>
-  </form>
+</form>
 </mat-card >
-</div>
 </div>

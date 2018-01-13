@@ -30,7 +30,10 @@ import { CardsComponent } from './cards/cards.component';
     MatCheckboxModule,
     MatInputModule,
     MatCardModule,
-    MatGridListModule,MatToolbarModule,MatFormFieldModule,FlexLayoutModule,
+    MatGridListModule,
+    MatToolbarModule,
+    MatFormFieldModule
+    ,FlexLayoutModule,
     RouterModule.forRoot([
       {path:"Login",component:LoginComponent},
       {path:"TenentApp",component:TenentAppComponent},
