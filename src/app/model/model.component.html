@@ -1,0 +1,15 @@
+<form class="" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
+  <mat-form-field class="example-full-width">
+        <input matInput type="text" placeholder="Enter Username"  name="Company_name" id="Company_name" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+         <mat-select placeholder="Select"  name="option" id="option" ngModel>
+           <mat-option value="tenent_admin">TENENT ADMIN</mat-option>
+           <mat-option value="verifier">VERIFIER</mat-option>
+           <mat-option value="approver">APROVER</mat-option>
+         </mat-select>
+       </mat-form-field>
+
+  <button mat-raised-button (click)="onNoClick()" color="primary">SUBMIT</button>
+</form>

@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+ import { DataService } from '../data.service';
 @Component({
   selector: 'app-login',
   templateUrl:'./login.component.html' ,
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  constructor() { }
 
-  ngOnInit() {
-  }
-
-  registerUser(value: NgForm) {
-   console.log(value);
-   // {email: '...', password: '...'}
-   // ... <-- now use JSON.stringify() to convert form values to json.
+ ngOnInit() {
  }
+
+ //calling sevice for send data
+ public constructor(private myService: DataService) { }
+   registerUser(value: NgForm) {
+    console.log(value);
+      //send data to the service
+       this.myService.myMethod(value);
+   }
+
 }

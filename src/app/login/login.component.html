@@ -1,6 +1,6 @@
 <!-- login form  -->
 <!-- toolbar -->
-<mat-grid-list cols="1"  rowHeight="140px" >
+<!-- <mat-grid-list cols="1"  rowHeight="140px" >
   <mat-grid-tile class="grid1" ></mat-grid-tile>
 </mat-grid-list>
 <mat-grid-list cols="3"  rowHeight="65px" >
@@ -11,22 +11,37 @@
     </mat-toolbar>
   </mat-grid-tile>
   <mat-grid-tile class="grid3" > </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
+
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="0px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="32.33%"></div>
+    <div class="item item-2" fxFlexOrder="3" fxFlex="32.33%"></div>
+    <div class="item item-3"  fxFlex="32.33%" fxFlex.sm="32.33%">
+    <mat-toolbar color="primary" >
+        <span>Super Administrator Login</span>
+    </mat-toolbar>
+  </div>
+</div>
 
 <!--table  -->
-<div class="demo-card-container" flex  fxLayout.xs="column"  fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center">
-  <mat-card class="" fxFlex="33.33%" fxFlex.xs="50%">
+<div class="demo-card-container" flex  fxLayout.xs="column"   fxLayoutGap="0px" fxLayoutAlign="center">
+  <mat-card class="" fxFlex="32.33%" >
 
     <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
         <label for="email">Email</label>
         <mat-form-field >
-          <input matInput type="text"  name="email" id="email" ngModel>
+          <input matInput type="email"  name="email" id="email" ngModel>
         </mat-form-field >
 
       <label for="email">Password</label>
-
       <mat-form-field >
-        <input matInput type="text" name="password" id="password" ngModel>
+        <input matInput type="password" name="password" id="password" ngModel>
       </mat-form-field >
       <mat-grid-list cols="3" rowHeight="40px">
         <mat-grid-tile></mat-grid-tile>

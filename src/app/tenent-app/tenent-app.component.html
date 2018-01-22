@@ -1,7 +1,7 @@
 
-  <div cass="demo-card-container" flex fxLayout.xs="column" fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center center">
+  <!-- <div cass="demo-card-container" flex fxLayout.xs="column" fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center center">
   <mat-card >
-    <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+    <form class="example-container" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
 
 <div class="" fxFlex="370px">
   <mat-grid-list cols="1"  rowHeight="40px">
@@ -64,4 +64,83 @@
 </div>
 </form>
 </mat-card>
+</div> -->
+
+<!-- <div cass="demo-card-container" flex fxLayout.xs="column"  fxLayout.sm="column" fxLayout.md="column" fxLayoutGap.xs="0px" fxLayoutGap="0px" fxLayoutAlign="center center">
+<mat-card >
+  <form class="example-card" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
+
+<mat-grid-list cols="1"  rowHeight="40px">
+  <mat-grid-tile>
+    <mat-card-title>App Tanent</mat-card-title>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+  <mat-form-field  >
+  <input matInput type="text"  placeholder="Company Name" name="companyname" id="companyname" ngModel>
+</mat-form-field>
+
+  <mat-form-field >
+  <input matInput type="text" placeholder="Contact Name" name="contactname" id="contactname" ngModel>
+</mat-form-field>
+
+  <mat-form-field  >
+  <input matInput type="text" placeholder="Designation" name="designation" id="designation" ngModel>
+</mat-form-field>
+
+  <mat-form-field  >
+  <input matInput type="text" placeholder="Phone number" name="number" id="number" ngModel>
+</mat-form-field>
+
+  <mat-form-field  class="example-full-width">
+  <input matInput type="text" placeholder="Address" name="Address" id="Address" ngModel>
+</mat-form-field>
+
+  <mat-form-field  class="example-full-width">
+  <input matInput type="text" placeholder="Corporate Email" name="email" id="email" ngModel>
+</mat-form-field>
+
+
+<mat-grid-list cols="4" rowHeight="40px">
+  <mat-grid-tile></mat-grid-tile>
+<mat-grid-tile fxLayoutAlign="center center">
+  <button  mat-raised-button type="submit" color="primary" class="save_button" >SAVE</button></mat-grid-tile>
+<mat-grid-tile>
+<button  mat-raised-button color="primary">CANCLE</button>
+</mat-grid-tile>
+</mat-grid-list>
+
+</form>
+</mat-card>
+</div> -->
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="0px"
+     fxLayoutGap.xs="0px">
+  <div class="" fxFlex="32%">  </div>
+  <!-- <div class="item" fxFlex="32%"> -->
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  <!-- </div> -->
+  <div class="item" fxFlex="32%"></div>
 </div>

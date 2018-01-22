@@ -1,99 +1,10 @@
 
-<!-- new form -->
-<!-- <div class="demo-card-container"  fxLayout.xs="column" fxLayoutGap.xs="0px"  fxLayoutGap="10px" fxLayoutAlign="center center">
-  <mat-card fxFlex="400px" class="demo-card-blue mat-card-flat" >
-    <mat-card-title fxLayoutAlign="center">App Tanent</mat-card-title>
-    <mat-card-actions>
-      <form class="example-container">
-      <div fxLayoutAlign="center center">
-        <span>Company Name </span>
-         <mat-form-field >
-          <input matInput  required>
-        </mat-form-field>
-
-        </div>
-
-        <div fxLayoutAlign="center center">
-        <span>Contact Name </span>
-        <mat-form-field >
-          <input matInput  required>
-        </mat-form-field>
-      </div>
-
-      <div fxLayoutAlign="center center">
-      <span>Designation </span>
-      <mat-form-field >
-        <input matInput  required>
-      </mat-form-field>
-    </div>
-
-      <div fxLayoutAlign="center center">
-      <span>Phone Number</span>
-        <mat-form-field >
-          <input matInput required>
-        </mat-form-field>
-      </div>
-
-      <div fxLayoutAlign="center center">
-      <span>Address</span>
-        <mat-form-field >
-          <input matInput required>
-        </mat-form-field>
-      </div>
-
-     <div fxLayoutAlign="center center">
-      <span>corporate Email</span>
-        <mat-form-field >
-          <input matInput required>
-        </mat-form-field>
-    </div>
-
-      </form>
-      <div class="button-row" fxLayoutAlign="center center">
-      <button  mat-raised-button color="primary">SAVE</button>
-      <button  mat-raised-button color="primary">CANCLE</button>
-    </div>
-    </mat-card-actions>
-  </mat-card>
-</div> -->
-
-<!-- <mat-toolbar color="primary">
- <mat-toolbar-row>
-   <span>FundooBooks</span>
- </mat-toolbar-row>
-</mat-toolbar>
-
-<div style="text-align:center;height:100px;"></div>
-
-<mat-grid-list cols="4" rowHeight="3:2">
- <mat-grid-tile></mat-grid-tile>
- <mat-grid-tile class="card1" fxLayoutGap="100px" >Card 1</mat-grid-tile>
- <mat-grid-tile class="card1">Card 2</mat-grid-tile>
- <mat-grid-tile></mat-grid-tile>
-</mat-grid-list>
-
-<div style="text-align:center;height:5px;"></div>
-
-<mat-grid-list cols="4" rowHeight="50px">
- <mat-grid-tile ></mat-grid-tile>
- <mat-grid-tile>
-   <mat-icon style="margin-right:10px">home</mat-icon>
-   <button mat-raised-button >ADD THE NEW TENANT</button>
- </mat-grid-tile>
- <mat-grid-tile>
-   <mat-icon style="margin-right:10px">home</mat-icon>
-   <button mat-raised-button > VIEW RE-ACTIVE TENANT</button>
- </mat-grid-tile>
- <mat-grid-tile></mat-grid-tile>
-
- <mat-grid-tile></mat-grid-tile>
- <mat-grid-tile>
-   <mat-icon style="margin-right:10px">home</mat-icon>
-   <button mat-raised-button >VIEW ACTIVE TENANT</button>
- </mat-grid-tile>
- <mat-grid-tile>
-   <mat-icon style="margin-right:10px">home</mat-icon>
-   <button mat-raised-button >VIEW IN-ACTIVE TENANT</button>
- </mat-grid-tile>
- <mat-grid-tile></mat-grid-tile>
-</mat-grid-list> -->
+<ol>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li>
+    <button mat-raised-button (click)="newdialog()">Pick second</button>
+  </li>
+</ol>
+<router-outlet></router-outlet>

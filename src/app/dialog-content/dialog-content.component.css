@@ -1,0 +1,16 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+.example-card {
+  width: 350px;
+}
+
+.example-full-width{
+  width: 100%;
+  
+}

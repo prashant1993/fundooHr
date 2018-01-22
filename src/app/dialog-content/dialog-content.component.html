@@ -1,0 +1,40 @@
+<!-- dialog for update data -->
+<form class="" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm.value)">
+<mat-card class="example-card">
+  <mat-card-content>
+    <mat-form-field class="example-full-width" mat-placeholder="Company Name">
+          <input matInput type="text" placeholder="Company Name" maxlength="100" name="Company_name" id="Company_name" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Contact Name" name="Contact_name" id="Contact_name" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Designation" name="Designation" id="Designation" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Phone Number" name="Phone_number" id="Phone_number" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Address" name="Address" id="Address" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Corporate Email" name="corporate_email" id="corporate_email" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="GSTN" name="GSTN" id="GSTN" ngModel>
+        </mat-form-field>
+      </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" style="float:right;margin-top:5%;" (click)="onNoClick()" class="save_button" >SAVE</button>
+        </mat-card-actions>
+</mat-card>
+<form>
+
+
+<!-- dialog for crete user -->
